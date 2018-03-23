@@ -6,14 +6,24 @@
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="../src/turbo-parallax.js"></script>
-<body style="min-height: 100vh; min-width: 100vw; padding: 0; margin: 0;">
+<body style="min-height: 100vh; min-width: 100vw; max-height: 100vh; max-width: 100vw; padding: 0; margin: 0; overflow: hidden;">
 <div
-  style="position: absolute; width: 200px; height: 200px; left: 400px; top: 180px; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
+  style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; background-image: url('sky.jpg'); background-size: cover; background-repeat: no-repeat; background-position: 50% 100%;"
+  data-turbo-parallax="{'zoom': 1.25, 'depth': 9}"
+>
+</div>
+<div
+  style="position: absolute; width: 100%; height: 100%; left: 0px; bottom: 0px; background-image: url('field.png'); background-size: cover; background-repeat: no-repeat; background-position: 50% 100%;"
+  data-turbo-parallax="{'zoom': 1.25, 'depth': 5}"
+>
+</div>
+<div
+  style="position: absolute; width: 200px; height: 200px; left: 50%; top: 25%; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
   data-turbo-parallax="{'zoom': 2, 'depth': 3}"
 >
 </div>
 <div
-  style="position: absolute; width: 200px; height: 200px; left: 250px; top: 150px; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
+  style="position: absolute; width: 200px; height: 200px; left: 35%; top: 30%; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
   data-turbo-parallax="{'zoom': 3, 'depth': 2}"
 >
 </div>
