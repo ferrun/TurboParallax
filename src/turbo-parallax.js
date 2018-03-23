@@ -44,10 +44,12 @@ class TurboParallaxLayer {
   }
 
   setPosition(event, self) {
-    let elemOffsetX = self.config.offsetX + self.$el.width() / 2;
-    let elemOffsetY = self.config.offsetY + self.$el.height() / 2;
-    let translateX = (elemOffsetX - event.pageX) / (self.config.depth);
-    let translateY = (elemOffsetY - event.pageY) / (self.config.depth);
+    // let elemOffsetX = self.config.offsetX + self.$el.width() / 2,
+    //     elemOffsetY = self.config.offsetY + self.$el.height() / 2,
+    let bodyOffsetX = $('body').width() / 2,
+        bodyOffsetY = $('body').height() / 2,
+        translateX = (bodyOffsetX - event.pageX) / (self.config.depth),
+        translateY = (bodyOffsetY - event.pageY) / (self.config.depth);
 
     self.setMatrix(self.config.zoom, translateX, translateY);
   }
