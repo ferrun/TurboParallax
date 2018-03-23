@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../src/turbo-parallax.js"></script>
+<body style="min-height: 100vh; min-width: 100vw; padding: 0; margin: 0;">
+<div
+  style="position: absolute; width: 200px; height: 200px; left: 400px; top: 180px; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
+  data-turbo-parallax="{'zoom': 2, 'depth': 3}"
+>
+</div>
+<div
+  style="position: absolute; width: 200px; height: 200px; left: 250px; top: 150px; background-image: url('cat.png'); background-size: contain; background-repeat: no-repeat; background-position: 50% 50%;"
+  data-turbo-parallax="{'zoom': 3, 'depth': 2}"
+>
+</div>
+</body>
+<script>
+  let parallax = new TurboParallax();
+</script>
+</html>
